@@ -1,1 +1,1 @@
-# laboratorio_sistemas_digitales
+# sistemas_digitales_git
