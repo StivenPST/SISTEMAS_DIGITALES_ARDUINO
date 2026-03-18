@@ -1,4 +1,4 @@
-# Sistemas Digitales - Actividad Arduino
+# SISTEMAS DIGITALES - ARDUINO (HISTORIA, ARQUITECTURA, PERIFICRICOS, ETC.)
 ## 👨‍💻 Autores
 * **Nombres:** Edwin Stiven Pasto Arévalo / Julian Felipe Romero Bocanegra
 * **Carrera:** Ingeniería de Sistemas
