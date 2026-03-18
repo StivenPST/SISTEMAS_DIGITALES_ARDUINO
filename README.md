@@ -30,12 +30,12 @@ Cuenta con una memoria de 1 KB, es la memoria no volatil de lectura/escritura le
 
 ## Periféricos de Arduino y su uso
 
-### UART: 
-Pines 0 (RX) y 1 (TX) para hablar con la computadora.
-### I2C: 
-Pines A4 (SDA) y A5 (SCL) para conectar muchos sensores con solo dos cables.
-### SPI: 
-Pines 10 al 13, usados para tarjetas SD o pantallas rápidas.
+### UART (Universal Asynchronous Receiver-Transmitter)
+Utiliza los pines 0 (RX) y 1 (TX) es la comunicación de serie basica para cargar codigo desde la PC y el monitor en serie.
+### I2C (Inter-Integrated Circuit)
+Se encuentra localizado en los pines A4 (SDA) y A5 (SCL), permite conectar hasta 128 dispositivos, usando solo 2 cables de direccionamiento
+### SPI (Serial Peripheral Interface)
+Ubicado en los pines 10 (SS), 11 (MOSI), 12 (MISO) y 13 (SCK), es un protocolo de velocidad ideal para tarjetas SD, pantallas rápidas o modulos de comunicación inalambrica.
 
 ## Ficha técnica, pines de conexión
 Arduino actúa como el "sistema nervioso" de un proyecto. Su flujo de trabajo es simple:
