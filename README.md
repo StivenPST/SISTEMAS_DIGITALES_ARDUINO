@@ -58,9 +58,11 @@ Entradas que son de tipo analógico: Miden un rango de voltaje continuo (0 a 5V)
 ### Procesamiento (lógica): 
 El código que se ha instalado en la MCU decodifica las señales de entrada. Aplica estructuras de control de flujo, características del lenguaje C/C++ (for, while, if, switch), para tomar decisiones basadas en la lógica programada.
 
+### Salidas PWM (Modulación por ancho de pulso):
+Simula una salida analógica alterando el ciclo de trabajo de una señal digital rápida. Se emplea para regular la intensidad de un LED o el lugar de un servomotor. Los pines 3, 5, 6, 9, 10 y 11 del Uno tienen la habilidad PWM.
+
 ### Salida (Actuadores): 
 El Arduino produce una respuesta con el fin de regular el entorno. Salida digital (ON/OFF): Encienden o apagan componentes como LEDs, o encienden relés, al establecer un pin en estado HIGH (5V) o LOW (0V). 
-### Salidas PWM (Modulación por ancho de pulso):
 
 
 ---
