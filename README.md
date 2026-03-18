@@ -1,11 +1,14 @@
 # SISTEMAS DIGITALES - ARDUINO (HISTORIA, ARQUITECTURA, PERIFICRICOS, ETC.)
-## 👨‍💻 Autores
+## Autores
 * **Nombres:** Edwin Stiven Pasto Arévalo / Julian Felipe Romero Bocanegra
 * **Carrera:** Ingeniería de Sistemas
 * **Docente:** Diego Alejandro Barragan Vargas
 * **Año:** 2026
 
 ## Historia de Arduino
+<img width="738" height="576" alt="image" src="https://github.com/user-attachments/assets/5f5c4bcb-2e77-45c1-81d5-8f4a28849501" />
+Arduino UNO - Fuente Propia
+
 En el año 2005, en Italia, surgió el proyecto Arduino desde el Interaction Design Institute Ivrea (IDII) como solución a la demanda de los alumnos de tener un instrumento asequible y económico para desarrollar proyectos de interacción física. El equipo, que fue dirigido en un principio por Massimo Banzi, tenía como objetivo encontrar una opción más económica al microcontrolador BASIC Stamp, que costaba alrededor de 100 dólares y suponía un obstáculo para la mayoría de los estudiantes.
 
 La intervención de Hernando Barragán, un alumno colombiano que creó Wiring, una plataforma que estableció los fundamentos del lenguaje de programación y el entorno de desarrollo que ahora conocemos como Arduino, fue un hito esencial en la creación de esta última. El nombre "Arduino" tiene un origen interesante: viene de "Bar di Re Arduino" (Bar del Rey Arduino), un sitio que Massimo Banzi iba a menudo en Ivrea.
@@ -50,6 +53,10 @@ Descripción: Es un protocolo de alta velocidad con capacidad full-duplex que em
 Puertos USB 2.0 Tipo A & Tipo B - Fuente Propia
 
 ## Ficha técnica, pines de conexión
+<img width="1216" height="530" alt="image" src="https://github.com/user-attachments/assets/cbd1cb03-25f8-488a-b309-f75ef27b9b09" />
+Esquema Arduino UNO - Datasheet Arduino UNO Rev3
+
+
 ### Los pines de entrada/salida (GPIO - General Purpose Input/Output) permiten la interacción con el entorno físico.
 Entrada (Sensores): El Arduino percibe las señales del ambiente.
 Entradas digitales: Interpretan estados binarios (HIGH o LOW), como la salida de un sensor de movimiento (PIR) o el pulso de un botón.
@@ -68,12 +75,13 @@ El Arduino produce una respuesta con el fin de regular el entorno. Salida digita
 ---
 ## 📚 Referencias y Atribuciones
 
-* **Cnti. (2014, May 30). Arduino:** el Hardware Libre. CNTI. https://cnti.gob.ve/arduino-el-hardware-libre/
-* **A000046 Arduino**, A000046 Datasheet - page 8. (n.d.). https://elcodis.com/parts/1938089/A000046_p8.html#datasheet
-* **https://www.ecured.cu/index.php?title=Arduino&oldid=3461228**
-* **Digital Circuits and Systems** - Circuits i Sistemes Digitals (CSD) - EETAC - UPC. (n.d.). https://digsys.upc.edu/csd/P09/L09_1/L9_1.html#L2
-
-* **Estándares de Hardware:** La identificación de conectores se basa en las especificaciones del [USB Implementers Forum (USB-IF)](https://www.usb.org/usb-20-documents) para el estándar **USB 2.0**, definiendo las interfaces físicas **Tipo-A** (Host) y **Tipo-B** (Device).
+* **Estándares de Hardware:** La identificación de conectores se basa en las especificaciones del [USB Implementers Forum (USB-IF)](https://www.usb.org/documents) para el estándar **USB 2.0**, definiendo las interfaces físicas **Tipo-A** (Host) y **Tipo-B** (Device).
+* **Documentación Técnica y Datasheets:**
+    * Especificaciones del microcontrolador extraídas de la [Hoja de Datos (Datasheet) oficial del Arduino UNO Rev3](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf).
+    * Diagramas de arquitectura y referencia de pines del [Modelo A000046 (pág. 8)](https://elcodis.com/parts/1938089/A000046_p8.html#datasheet).
+* **Conceptos de Hardware Libre y Sistemas Digitales:**
+    * Análisis sobre la filosofía del [Hardware Libre en Arduino](https://cnti.gob.ve/arduino-el-hardware-libre/) por el CNTI.
+    * Fundamentos de [Circuitos y Sistemas Digitales](https://digsys.upc.edu/csd/P09/L09_1/L9_1.html#L2) proporcionados por la EETAC - UPC.
+    * Información enciclopédica sobre la evolución de la [Plataforma Arduino](https://www.ecured.cu/index.php?title=Arduino&oldid=3461228) vía EcuRed.
 * **Asistencia Técnica:** La estructura de la documentación, la organización técnica del repositorio y la clarificación de roles de conectividad contaron con el apoyo de **Gemini (IA de Google)** para asegurar estándares de documentación profesional.
-* de documentación profesional.
-* **Licencia:** Este proyecto se distribuye bajo fines académicos para la Universidad Compensar.
+* **Licencia:** Este proyecto se distribuye bajo fines académicos para la **Universidad Compensar**.
