@@ -26,28 +26,31 @@ El Arduino Uno funciona con una frecuencia de reloj de 16 MHz. Gracias a su arqu
 
 ## Gestion de memoria
 El ATmega328P tiene tres clases de memoria, cada una con un propósito particular:
-
 ### Memoria Flash (32 KB): 
 Es una memoria permanente en la que se guarda el programa creado por el usuario (denominado sketch). Aproximadamente 31.5 KB quedan libres para el código, ya que el bootloader emplea alrededor de 0.5 KB de esta capacidad. Apoya cerca de 10,000 ciclos de escritura.
-
-
 ### Memoria SRAM (de 2 KB): 
 Es una memoria volátil de acceso extremadamente veloz. Su tarea es guardar las variables, los datos temporales y la pila (stack) mientras el programa se ejecuta. Cuando la placa queda desconectada, su contenido se pierde.
-
 ### Memoria EEPROM (1 KB): 
 Es una memoria no volátil de lectura/escritura. Se utiliza para guardar configuraciones o datos que deben persistir incluso cuando la placa no recibe alimentación. Soporta un mayor número de ciclos de escritura (hasta 100,000) en comparación con la Flash
 
 ## Periféricos de Arduino y su uso
+### UART (Transmisor-receptor asíncrono universal):
+Pines: 0 (RX, recepción) y 1 (TX, transmisión).
+Descripción: Es el protocolo de comunicación serial asíncrono esencial. Se emplea para comunicarse con la computadora por medio del convertidor USB-Serie de la placa, lo que posibilita cargar los bocetos y depurar usando el Monitor Serie.
+
+### I2C (Inter-Integrated Circuit)
+Pinos: A4 (SDA - línea de datos) y A5 (SCL - línea de reloj).
+Descripción: Un protocolo síncrono que emplea únicamente dos líneas (de reloj y de datos) para establecer comunicación con varios dispositivos (esclavos), cada uno de los cuales está identificado a través de una dirección única. En teoría, permite la conexión de hasta 128 dispositivos en un solo bus.
+
+### SPI (Interfaz de periféricos en serie):
+Pines: 10 (SS - Selección de esclavo), 11 (MOSI - Salida del maestro hacia el esclavo), 12 (MISO - Entrada del maestro desde el esclavo) y 13 (SCK - Reloj serial).
+Descripción: Es un protocolo de alta velocidad con capacidad full-duplex que emplea cuatro líneas. Es perfecto para aplicaciones que necesitan una rápida transmisión de datos, por ejemplo módulos de comunicación sin cables, tarjetas SD o pantallas gráficas.
+
 <img width="3210" height="1165" alt="image" src="https://github.com/user-attachments/assets/dc7ad0e4-7eb9-4b92-aa86-a87514e42b77" />
 Puertos USB 2.0 Tipo A & Tipo B - Fuente Propia
 
 
-### UART (Universal Asynchronous Receiver-Transmitter)
-Utiliza los pines 0 (RX) y 1 (TX) es la comunicación de serie basica para cargar codigo desde la PC y el monitor en serie.
-### I2C (Inter-Integrated Circuit)
-Se encuentra localizado en los pines A4 (SDA) y A5 (SCL), permite conectar hasta 128 dispositivos, usando solo 2 cables de direccionamiento
-### SPI (Serial Peripheral Interface)
-Ubicado en los pines 10 (SS), 11 (MOSI), 12 (MISO) y 13 (SCK), es un protocolo de velocidad ideal para tarjetas SD, pantallas rápidas o modulos de comunicación inalambrica.
+
 
 ## Ficha técnica, pines de conexión
 1. Entrada (Sensores)
