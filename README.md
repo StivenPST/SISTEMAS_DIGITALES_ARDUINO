@@ -24,9 +24,9 @@ Opera con una frecuencia 16 MHZ, por su diseño puedo ejecutar cerca de 16 MIPS,
 ### Flash
 Cuenta con una memoria de 32 KB, es una memoria no volatil donde se almacena el codigo del programa sketch 
 ### SRAM
-Cuenta con una memoria de 2KB, donde se gaurdan las variables cuando el programa corre.
+Cuenta con una memoria de 2KB, es una memoria volatil de acceso rapido donde se guardan las variables y datos temporales del programa en ejecucción.
 ### EEPROM
-Cuenta con una memoria de 1 KB, es la memoria no volatil.
+Cuenta con una memoria de 1 KB, es la memoria no volatil de lectura/escritura lenta, guarda configuraciones que deben persistir incluso si se desconecta la alimentación.
 
 ## Periféricos de Arduino y su uso
 
